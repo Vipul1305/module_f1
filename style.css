@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+    color: #333333;
+}
+body{
+    background: #1f1f1f;
+    margin: 15px;
+    font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #333333;
+}
+.navbar{
+    border: 1px solid #B1A592;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .nav_link, .logo{
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    color: #B1A592;
+    margin: 6px;
+    padding: 10px 47px ;
+
+    border: 1px solid #B1A592;
+    border-radius: 50px;
+}
+.navbar .leftNav{
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+    .logo{
+        border:none;
+        background: #323025;
+        margin: 6px;
+        padding: 10px 120px ;
+    }
+}
+.navbar .rightNav{
+    display: flex;
+    align-items: center;
+}
+.nav_link:hover{
+    background-color: #DFD6C5;
+    color: #333333;
+}
+
+/* main body */
+.container,.down_section{
+    display: flex;
+    column-gap: 17px;
+}
+
+.left_section{
+    margin-top: 18px;
+    background: #DFD6C5;
+    border-radius: 30px;
+    width:100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.l1{
+    padding: 3%;
+}
+.left_section img{
+    width: 100%;
+}
+h1,u{
+    font-weight: 700;
+    font-size: 30px;
+}
+.location{
+    width:fit-content;
+    border: 1px solid #323025;
+    border-radius: 50px;
+    padding: 0px 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: #323025;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333333;
+    padding: 20px 3%;
+}
+
+/* zoom */
+.image{
+    overflow: hidden;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    transition-duration: 1000ms;
+}
+.left_section:hover img{
+    transform: scale(110%);
+}
+.up_section:hover img{
+    transform: scale(110%);
+}
+.down_left:hover img{
+    transform: scale(110%);
+}
+.image2{
+    overflow: hidden;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+.image2 img{
+    transition-duration: 1000ms;
+}
+.down_right:hover img{
+    transform: scale(110%);
+}
+
+/* dot */
+.dot{
+    display: flex;
+    align-items: center;
+    
+}
+.dot .d{
+    height: 30px;
+    width: 30px;
+    max-width: 100%;
+    background-color: #342415;
+    border-radius: 50%;
+}
+
+
+
+.right_section{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}  
+.up_section{
+    background: #8E886D;
+    border-radius: 30px;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.r1{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+.r1 img{
+    width: 60em;
+}
+
+
+
+.down_left{
+    background: #916E58;;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.down_right{
+    background: #B1A48E;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+}
+
+.inline_heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.down_section .r2{
+    padding: 3%;
+}
+.down_section .r3{
+    padding: 40px 4%;
+}
+.down_section .down_right img{
+    width: 100%;
+}
+.down_section .down_left img{
+    width: 100%;
+}
+.down_section .r3 table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse:collapse;
+} 
+tr,td{
+    border-top: 3px solid #1f1f1f;
+    border-bottom: 3px solid #1f1f1f;
+    padding:3px;
+}
+th{
+    font-weight: 800;
+}
+
+/* media quary */
+
+@media (max-width:1140px){
+    .navbar .leftNav .logo{
+        
+    }
+    .navbar .leftNav > .nav_link{
+        visibility: hidden;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left_section img{
+        height:35em;
+    }
+
+}
+@media (max-width:840px){
+    .navbar .leftNav > .nav_link{
+        visibility: hidden;
+    }
+    .container{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .left_section img{
+        height:35em;
+    }
+    .down_section{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+}
