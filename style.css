@@ -53,6 +53,8 @@ color: #333333;
 .nav_link:hover{
     background-color: #DFD6C5;
     color: #333333;
+    transform: scale(105%);
+    transition-duration: 500ms;
 }
 
 /* main body */
